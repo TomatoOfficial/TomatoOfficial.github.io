@@ -25,7 +25,7 @@ TOMATO-OS 的核心是革命性的碎片检测算法(FDA)，能够：
 ### 成为早期采用者
 下载我们的客户端体验TOMATO-OS的强大功能：
 
-[下载 TOMATO-OS 客户端](https://tomatoofficial.github.io/client/tomato.exe)
+[下载 TOMATO-OS 客户端](https://tomatoofficial.github.io/)
 
 > 系统要求：  
 > - Windows 10+
