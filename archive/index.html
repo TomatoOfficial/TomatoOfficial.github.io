@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TOMATO ARCHIVE</title>
+    <style>
+        body { 
+            background: #111; 
+            color: #0f0; 
+            font-family: monospace;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #0f0;
+            padding: 20px;
+        }
+        input, button {
+            background: #222;
+            color: #0f0;
+            border: 1px solid #0f0;
+            padding: 5px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TOMATO-OS SECURE ARCHIVE</h1>
+        <p>Enter access key:</p>
+        <input type="text" id="accessKey">
+        <button onclick="checkKey()">Submit</button>
+        <p id="message"></p>
+        
+        <script>
+            function checkKey() {
+                const key = document.getElementById("accessKey").value;
+                if(key === "LATEST642972") {
+                    document.getElementById("message").innerHTML = 
+                        `Access granted!<br>
+                        Manual authentication required.<br>
+                        Code: <strong>RED_HARVEST</strong><br>
+                        Enter in TOMATO-OS console: AUTH RED_HARVEST`;
+                } else {
+                    document.getElementById("message").innerText = "Invalid key - Authorization failed";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
